@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family:  'Poppins', sans-serif;
+}
+ 
+body{
+background-color: rgb(0, 0, 0);
+
+}
+
+a{
+text-decoration: none;
+color: white;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 24px;
+}
+
+header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 10pt 0 10px 13% ;
+   width: 27%;
+   height: 100%;
+   position: fixed;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 8px 25px 8px 8px ;
+    width: fit-content;
+}
+
+.nav-links a i {
+
+    font-size: 5rem;
+    margin-right: 15px;
+    
+}
+.nav-links a:hover  , .main-account a:hover {
+
+    background-color: rgb(47,51,54);
+    border-radius: 9999px;
+}
+.nav-links a:first-child{
+    padding: 7px 7px;
+}
+.nav-links a:first-child i {
+    margin: 0 ;
+}
+
+.twwet-button {
+    background-color: rgb(29,155,240);
+    width: 100% ;
+    height: 55px;
+    border-radius: 9999px;
+    margin-top: 15px;
+    cursor : pointer ;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+    border: 1px solid black;
+    transition-duration: 0.4s;
+    
+}
+.twwet-button:hover {
+    background-color: rgba(29,155,240,0.8);
+    transform: scale(1.1) ;
+    transition: 0.5s;
+}
+
+
+.main-account{
+    width: 100%;
+    height: 30%;
+    padding-top: 185px;
+}
+
+.main-account a {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.twwet-img{
+    width: 38px;
+    height: 38px;
+}
+
+.account-details {
+    display : flex ;
+    flex-direction:column;
+    flex-basis: 70%;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+.account-name{
+    font-weight: 600;
+}
+.account-username{
+    color: rgb(110,125,118);
+}
+
+
+main{
+    width: 71%;
+    height: 100%;
+    margin-left: 29%;
+}
+
+.main-flex{
+    display: flex;
+    width: 100%;
+}
+.main-feed{
+    width: 70%;
+    
+}
+
+.home-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    background-color:black;
+}
+.new-twwet{
+    display: flex;
+    width:100% ;
+    height: 100%;
+    padding: 4px 16px ;
+    
+}
+.new-twwet .twwet-img {
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+}
+
+.new-twwet-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+    margin-left: 12px;
+    
+}
+
+.new-twwet-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.new-twwet-actions ul {
+    display: flex;
+    list-style: none;
+}
+
+.new-twwet-details textarea {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    outline:none;
+    font-family: Arial, sans-serif;
+    
+
+}
+
+.new-twwet-actions ul li {
+    
+
+    margin-left: 20px;
+    color: #1c88d2;
+    cursor: pointer;
+    
+}
+
+.new-twwet-actions  .twwet-button {
+
+    width: 75px;
+    height: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+
+}
+
+footer {
+    font-weight: 700;
+    color: rgb(47,51,54);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 20px;
+    
+}
+
+.feed-twwet{
+
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 16px 0 16px;
+    height: 100%;
+    cursor: pointer;
+    border-top: 10px solid #ffffff;
+} 
+.feed-twwet-details{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+    
+}
+
+.old-twwet-actions ul li {
+    
+    
+    margin-left: 20px;
+    color: #1c88d2;
+    cursor: pointer;
+    
+}
+.old-twwet .twwet-img {
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+}
+
+.old-twwet-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+    margin-left: 12px;
+    
+    
+}
+
+.old-twwet-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    
+    
+}
+
+.old-twwet-actions ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.old-twwet-details input {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    outline:none;
+
+}
+
+
+.old-twwet-actions .opne-button{
+
+
+    background-color: rgb(29,155,240);
+    width: 75px ;
+    height: 55px;
+    border-radius: 9999px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-right: 510px;
+    cursor : pointer ;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+    border: 1px solid black;
+    transition-duration: 0.4s;
+    align-items: center;
+    
+
+}
+
+.old-twwet-actions .opne-button:hover {
+    background-color: rgba(29,155,240,0.8);
+    transform: scale(1.1) ;
+    transition: 0.5s;
+}
+
